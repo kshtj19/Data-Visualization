@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>K.R. Tambi - Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+        <!-- CSS for Lightbox Modal -->
+        <style>
+            /* The Modal (background) */
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                overflow: hidden;
+            }
+
+            /* Modal Content (the image) */
+            .modal-content {
+                max-width: 100vw;
+                max-height: 100vh;
+                object-fit: contain;
+            }
+
+            /* Close Button */
+            .close {
+                position: absolute;
+                top: 20px;
+                right: 35px;
+                color: greenyellow; /* Change the color to black */
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 1001;
+            }
+        </style>
+    </head>
+
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper" class="fade-in">
+            <!-- Intro -->
+            <div id="intro">
+                <h1>K.R Tambi<br /></h1>
+                <p>A Portfolio Of My Projects & Skills.</p>
+                <ul class="actions">
+                    <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+                </ul>
+            </div>
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo">My Projects</a>
+            </header>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="links">
+                    <li class="active"><a href="index.html">Project 1</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/kshitij-tambi/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/kshtj19" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </nav>
+
+            <!-- Main -->
+            <div id="main">
+                <!-- Featured Post -->
+                <article class="post featured">
+                    <header class="major">
+                        <span class="date">2024</span>
+                        <h2>Insights into the Careers of Data Professionals<br />Using Power BI</h2>
+                        <p>In this project, I leveraged Power BI to cleanse, transform, and visualize a sample dataset from a survey of data professionals to extract some interesting insights.</p>
+                    </header>
+
+                    <img src="images/Data-Visualization-thumbnail.jpg" alt="Data Analysis" style="display: block; width:65%; margin: 0 auto; margin-bottom: 20px;" />
+
+                    <!-- Expand button for text -->
+                    <ul class="actions special">
+                        <li><a href="#" class="button large" id="expandBtn">Expand</a></li>
+                    </ul>
+
+                    <!-- Hidden text content -->
+					<div id="extraContent" style="display: none; text-align: left;">
+						<h3>Data Professional Survey - Dataset Overview</h3>
+						<p>
+							This dataset was a survey of data professionals that collects detailed information on various aspects of their careers, 
+							demographics, and job satisfaction. Key attributes include:
+						</p>
+						
+						<h4>1. Job Satisfaction:</h4>
+						<p>Ratings on how happy respondents are in their current position with respect to management, upward mobility, and other job factors.</p>
+						
+						<h4>2. Breaking into Data:</h4>
+						<p>Responses on how difficult it was for them to enter the field of data.</p>
+					
+						<h4>3. Job Preferences:</h4>
+						<p>Preferences for new job opportunities, such as the importance of remote work, salary, and work-life balance.</p>
+					
+						<h4>4. Demographics:</h4>
+						<p>Information about gender, age, country of residence, education level, and ethnicity.</p>
+						<img src="images/Rawdata.png" alt="Raw Data" style="width: 100%; max-width: 900px;">
+						<p>
+							The dataset provides insights into the experiences and challenges faced by data professionals in their careers, 
+							along with their preferences for job features and career progression.
+			
+        
+                        <h3>Data Transformation and Visualization Process</h3>
+                        <p>I worked with a survey dataset of over 600 data professionals, which I transformed and visualized using Power BI.</p>
+                        
+                        <h4>1. Data Cleansing and Transformation:</h4>
+                        <p>I began by importing the raw dataset into Power Query. The data was initially messy and contained irrelevant columns, so I cleansed it by removing unnecessary information and ensuring the focus remained on relevant metrics.</p>
+						<img src="images/PowerQuery.jpg" alt="Description of the image" style="width: 100%; max-width: 900px;">
+	
+                        <h4>2. Data Standardization:</h4>
+                        <p>To ensure the dataset was ready for analysis, I converted and updated data types where necessary, making the columns usable for accurate and dynamic visualization.</p>
+
+                        <h4>3. Visual Insights:</h4>
+                        <p>After preparing the data, I explored various visualizations to uncover hidden trends and patterns. I leveraged:
+                        <ul>
+                            <li><strong>Cards</strong> to present key statistics at a glance.</li>
+                            <li><strong>Stacked Bar Charts and Stacked Column Charts</strong> to compare data across different categories.</li>
+                            <li><strong>Donut Charts</strong> to represent proportions and distribution.</li>
+                            <li><strong>Treemaps</strong> to visualize hierarchical data with an intuitive, space-efficient layout.</li>
+                        </ul>
+                        Through these visualizations, I was able to provide insights into the tools preferred by data professionals, challenges they face in their careers, and trends related to career growth and job satisfaction.</p>
+						
+                        <!-- Embedded image -->
+                        <img id="expandableImage" src="images/Project1.png" alt="Data Cleansing Process" style="width:100%; max-width:900px; cursor: pointer;">
+						<p>The <strong>Geographic Distribution of Participants</strong> shows that the majority of respondents come from the United States, followed closely by India and other countries. This global representation reflects the widespread reach of the data field, where professionals from all corners of the world contribute to this ever-growing industry.</p>
+
+						<p>When we look at <strong>Average Salaries by Job Title</strong>, it becomes clear that Data Scientists lead the way, earning the highest average salaries. Following close behind are Data Engineers and Data Architects, both highly technical roles. Interestingly, Data Analysts, who often represent the entry point for many professionals, still earn respectable salaries despite being on the lower end of the scale. This illustrates the rewarding nature of technical roles in the field of data.</p>
+
+						<p>Breaking into data analysis, however, is not always a smooth journey. The <strong>Difficulty to Break Into Data Analysis</strong> visualization shows that nearly 42% of respondents found it neither too easy nor too difficult. However, a significant percentage found it easy, while about 7% marked the journey as "very difficult." These figures tell a story of determination and varying levels of challenge, where each individual has a unique path into the field.</p>
+
+						<p><strong>Job Satisfaction</strong> among data professionals is a mixed bag. The survey shows that, on average, they are moderately happy with their work-life balance, scoring 5.74 out of 10. However, their <strong>Happiness with Salary</strong> scores slightly lower at 4.27 out of 10, indicating that while the profession offers flexibility and good compensation, some feel underpaid relative to their contributions and skill levels.</p>
+
+						<p>One of the most interesting findings is the dominance of <strong>Python</strong> as the <strong>Favourite Programming Language</strong> among data professionals. It is favored by a significant margin, with R and other languages trailing far behind. Python’s simplicity and versatility have clearly cemented its place as the go-to language in data science, making it an invaluable tool in the arsenal of any data professional.</p>
+
+						<h3>Conclusion:</h3>
+						<p>The story that emerges from this data is one of diversity, resilience, and opportunity. Data professionals come from all over the world and face varying challenges in breaking into the field. While their work can be rewarding—especially for those in technical roles like Data Scientists and Engineers—there remains room for improvement in terms of job satisfaction and salary.</p>
+
+						<p>This project has provided valuable insights into the lives and experiences of data professionals, revealing trends that can help inform both individuals and organizations about the opportunities and challenges in the world of data. Through powerful visualizations, I’ve been able to turn raw data into a compelling narrative that speaks to the heart of the modern data professional’s journey.</p>
+					</div>
+                    </div>
+
+                    <!-- Modal for full-screen image display -->
+                    <div id="imageModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
+                </article>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <section></section>
+            </footer>
+
+            <!-- Copyright -->
+            <div id="copyright">
+                <ul>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+            // Image Modal Code (for enlarging image when clicked)
+var modal = document.getElementById("imageModal");
+var img = document.getElementById("expandableImage");
+var modalImg = document.getElementById("modalImage");
+var span = document.getElementsByClassName("close")[0];
+
+// Ensure the modal is hidden by default
+modal.style.display = "none"; 
+
+// When the user clicks on the image, open the modal
+img.onclick = function(event) {
+    event.stopPropagation(); // Prevent the modal event from interfering with the expand event
+    modal.style.display = "block"; // Display the modal
+    modalImg.src = this.src; // Set the modal image source
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none"; // Hide the modal when the close button is clicked
+}
+            
+
+            // Expand/Collapse Text Code
+            document.getElementById("expandBtn").addEventListener("click", function(event) {
+                event.preventDefault();
+                event.stopPropagation(); // Prevent any unintended modal behavior
+
+                var extraContent = document.getElementById("extraContent");
+                var button = document.getElementById("expandBtn");
+
+                // Toggle the display of the hidden content
+                if (extraContent.style.display === "none" || extraContent.style.display === "") {
+                    extraContent.style.display = "block";
+                    button.textContent = "Collapse"; // Change button text to "Collapse"
+                } else {
+                    extraContent.style.display = "none";
+                    button.textContent = "Expand"; // Change button text back to "Expand"
+                }
+            });
+        </script>
+
+        <!-- Additional JS Libraries -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
