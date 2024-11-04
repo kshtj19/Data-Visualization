@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>K.R. Tambi - Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+        <!-- CSS for Lightbox Modal -->
+        <style>
+            /* The Modal (background) */
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1000;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                overflow: hidden;
+            }
+
+            /* Modal Content (the image) */
+            .modal-content {
+                max-width: 100vw;
+                max-height: 100vh;
+                object-fit: contain;
+            }
+
+            /* Close Button */
+            .close {
+                position: absolute;
+                top: 20px;
+                right: 35px;
+                color: greenyellow; /* Change the color to black */
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 1001;
+            }
+        </style>
+    </head>
+
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper" class="fade-in">
+            <!-- Intro -->
+            <div id="intro">
+                <h1>K.R Tambi<br /></h1>
+                <p>A Portfolio Of My Projects & Skills.</p>
+                <ul class="actions">
+                    <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+                </ul>
+            </div>
+
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo">My Projects</a>
+            </header>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul class="links">
+                    <li class="active"><a href="index.html">Project 1</a></li>
+                    <li><a href="project2.html">Project 2</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/kshitij-tambi/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/kshtj19" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </nav>
+
+            <!-- Main -->
+            <div id="main">
+                <!-- Featured Post -->
+                <article class="post featured">
+                    <header class="major">
+                        <span class="date">2024</span>
+                        <h2>Superstore Sales Insights: Transforming Data into Strategic Actions for Growth</h2>
+                        <p>In today’s data-driven landscape, the ability to extract valuable insights from complex datasets is crucial for informed decision-making. My project involved working with a comprehensive dataset that contained crucial sales and profit information.
+                        However, the dataset was not without its challenges; it included irrelevant columns, blank entries, and order IDs that needed to be addressed to create a functional data model.</p>
+                    </header>
+
+                    <img src="images/second.jpg" alt="Data Analysis" style="display: block; width:65%; margin: 0 auto; margin-bottom: 20px;" />
+
+                    <!-- Expand button for text -->
+                    <ul class="actions special">
+                        <li><a href="#" class="button large" id="expandBtn">Expand</a></li>
+                    </ul>
+
+                    <!-- Hidden text content -->
+					<div id="extraContent" style="display: none; text-align: left;">
+						<h3>The Data Cleaning Process</h3>
+						<p>
+							To prepare the dataset for analysis, I employed Power Query, a powerful data connectivity and preparation tool within Microsoft Excel and Power BI. This allowed me to systematically clean and transform the data, ensuring that I was working with relevant and accurate information. Here are the steps I took during the cleaning process:
+						</p>
+						
+						<h4>1. Removing Irrelevant Columns:</h4>
+						<p>I began by eliminating unnecessary columns that could clutter the dataset. This included deleting row IDs, order IDs, and any blank columns that served no purpose in the analysis.</p>
+						
+						<h4>2. Data Transformation: </h4>
+						<p>I ensured that all columns contained usable data by checking for inconsistencies, such as different formats for dates and categorical variables. This step involved standardizing data formats to create a cohesive dataset that could be easily analyzed.</p>
+
+    
+                            <iframe width="900" height="500" src="images/SECOND PROJECT 2024-11-03 21-53-19.mp4" 
+                            title="The Process" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+					
+			
+        
+                        <h3>Creating a Data Model</h3>
+                        <p>Once the dataset was clean, I proceeded to create a robust data model within Power BI. This involved establishing relationships between tables, specifically linking the newly created date table with the order date column in the original dataset. This relationship allowed for more complex queries and analyses that would yield deeper insights into sales trends over time.</p>
+                        
+                        
+                        <!-- Embedded image -->
+                        <img id="expandableImage" src="images/Second Project - 5.JPG" alt="Data Cleansing Process" style="width:100%; max-width:900px; cursor: pointer;">
+                        <h3>Developing Key Performance Indicators (KPIs)</h3>
+                        <p>Understanding the performance of sales metrics is essential for any business. To accomplish this, I developed DAX (Data Analysis Expressions) measures that served as KPIs for my analysis. Key highlights include:</p>
+                        <p>-<strong>Three Month Simple Moving Average:</strong> By implementing a DAX measure for the three-month simple moving average, I enabled accurate forecasting that accounts for seasonal variations and trends in sales data. This metric provided a clear view of sales performance over time, helping to identify upward or downward trends in the business.</p>
+                        <h3>Implementing Predictive Modeling</h3>
+						<p>To take my analysis a step further, I incorporated a predictive model using DAX time series forecasting functions. This innovative approach allowed me to project future sales based on historical data trends. By visualizing these predictions alongside actual sales figures, stakeholders could make informed decisions about inventory management, resource allocation, and strategic planning.</p>
+						<h3>Designing Interactive Visualizations</h3>	
+                        <p>The final step in my project was designing a comprehensive dashboard filled with interactive visualizations that conveyed the insights gathered from the data. Key features of the dashboard included:</p>
+                        <p>-<strong>Dynamic Charts and Graphs:</strong> I created interactive bar charts, line graphs, and pie charts that allowed users to explore sales performance across different categories, regions, and time periods.<br/>
+                            - <strong>Filters and Slicers:</strong> By incorporating filters and slicers, users could customize their view of the data, focusing on specific products, regions, or timeframes, enabling them to dive deeper into the metrics that mattered most to them.</p>
+                            <img id="expandableImage" src="images/Second Project - 1.JPG" alt="Data Cleansing Process" style="width:100%; max-width:900px; cursor: pointer;">
+                            <div>
+                                <h2>Actionable Insights</h2>
+                                <ul>
+                                    <li><strong>Segment-Specific Strategies:</strong> The <em>Consumer segment</em> contributes the most to sales (753K), followed by the <em>Corporate</em> and <em>Home Office</em> segments. Focusing marketing efforts on high-value consumer segments, like personalized campaigns and loyalty programs, could further boost sales. For <em>Corporate</em> and <em>Home Office</em> segments, consider targeted B2B strategies, such as volume discounts or corporate partnerships, to increase engagement and spending.</li>
+                            
+                                    <li><strong>Regional Focus:</strong> The <em>West region</em> shows the highest sales (33.37%), followed by <em>East (28.75%)</em> and <em>Central</em>. Targeting underperforming regions, such as <em>South (16.1%)</em>, with region-specific promotions or localized advertising could improve sales balance across regions.</li>
+                            
+                                    <li><strong>Sub-Category Optimization:</strong> <em>Phones</em>, <em>Chairs</em>, and <em>Binders</em> are the highest-selling sub-categories. Ensuring adequate stock levels for these items and monitoring customer demand trends in these categories could help maintain steady sales. Lower-performing categories like <em>Art</em> and <em>Supplies</em> may need discounts or bundling to drive up sales.</li>
+                            
+                                    <li><strong>Shipping Mode Enhancement:</strong> <em>Standard Class</em> is the most frequently used shipping mode, suggesting it’s likely the most cost-effective for customers. Consider promoting <em>Second Class</em> and <em>First Class</em> options by offering small incentives (like quicker delivery or special packaging) to increase revenue through shipping upgrades.</li>
+                            
+                                    <li><strong>Payment Mode Insights:</strong> With <em>COD (Cash on Delivery)</em> being the most popular mode of payment (667K), consider offering incentives for <em>Online</em> or <em>Card</em> payments to reduce the handling costs and risks associated with COD.</li>
+                            
+                                    <li><strong>Improvement in Monthly Sales and Profit:</strong> The year-over-year (YoY) monthly profit and sales visualizations show fluctuations. Implementing consistent monthly sales targets and monitoring performance more closely can help maintain upward trends and reduce monthly variability.</li>
+                            
+                                    <li><strong>Forecasting and Inventory Management:</strong> The 3-month moving average forecast chart shows a projected increase in sales. Inventory planning should align with this forecast to avoid stockouts, especially for high-demand sub-categories like <em>Phones</em> and <em>Chairs</em>. This will ensure product availability during peak periods.</li>
+                                    <!-- Embedded image -->
+                        <img id="expandableImage" src="images/Second Project - 6.JPG" alt="Data Cleansing Process" style="width:100%; max-width:900px; cursor: pointer;">
+                                </ul>
+                            
+                                <h2>Conclusion</h2>
+                                <p>The Superstore sales analysis provides a clear view of which segments, regions, and product categories are driving revenue. The insights suggest that targeted marketing and operational adjustments in underperforming regions, product categories, and segments can lead to improved sales. Additionally, enhancing the customer experience through shipping and payment options, while leveraging forecasting for inventory optimization, could support sustained growth and profitability.</p>
+                            </div>
+                            
+					</div>
+                    </div>
+
+                    <!-- Modal for full-screen image display -->
+                    <div id="imageModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
+                </article>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <section></section>
+            </footer>
+
+            <!-- Copyright -->
+            <div id="copyright">
+                <ul>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+            // Image Modal Code (for enlarging image when clicked)
+var modal = document.getElementById("imageModal");
+var img = document.getElementById("expandableImage");
+var modalImg = document.getElementById("modalImage");
+var span = document.getElementsByClassName("close")[0];
+
+// Ensure the modal is hidden by default
+modal.style.display = "none"; 
+
+// When the user clicks on the image, open the modal
+img.onclick = function(event) {
+    event.stopPropagation(); // Prevent the modal event from interfering with the expand event
+    modal.style.display = "block"; // Display the modal
+    modalImg.src = this.src; // Set the modal image source
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none"; // Hide the modal when the close button is clicked
+}
+            
+
+              // Expand/Collapse Text Code
+            document.getElementById("expandBtn").addEventListener("click", function(event) {
+                event.preventDefault();
+                event.stopPropagation(); // Prevent any unintended modal behavior
+
+                var extraContent = document.getElementById("extraContent");
+                var button = document.getElementById("expandBtn");
+
+                // Toggle the display of the hidden content
+                if (extraContent.style.display === "none" || extraContent.style.display === "") {
+                    extraContent.style.display = "block";
+                    button.textContent = "Collapse"; // Change button text to "Collapse"
+                } else {
+                    extraContent.style.display = "none";
+                    button.textContent = "Expand"; // Change button text back to "Expand"
+                }
+            });
+        </script>
+        <script>
+            // JavaScript to highlight the current project link in the nav bar
+            document.querySelectorAll('#nav .links a').forEach(link => {
+                if (link.href === window.location.href) {
+                    link.parentElement.classList.add('active');
+                } else {
+                    link.parentElement.classList.remove('active');
+                }
+            });
+        </script>
+    
+
+        <!-- Additional JS Libraries -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
